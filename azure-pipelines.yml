@@ -26,11 +26,5 @@ steps:
     script: |
       curl -v --user 'admin:admin123' --upload-file ./home/vsts/work/1/s/target/petclinic.war
       http://192.168.86.137:8082/repository/deployment/petclinic.war
-- task: cURLUploader@2
-  inputs:
-    files: '/home/vsts/work/1/s/target/petclinic.war'
-    authType: 'UserAndPass'
-    username: 'admin'
-    password: 'admin123'
-    url: 'http://192.168.86.137:8082/repository/deployment/petclinic.war'
+
     
