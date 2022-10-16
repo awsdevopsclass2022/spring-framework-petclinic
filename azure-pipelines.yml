@@ -20,6 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
 - task: cURLUploader@2
   inputs:
     files: '/home/vsts/work/1/s/target/petclinic.war'
@@ -27,3 +28,4 @@ steps:
     username: 'admin'
     password: 'admin123'
     url: 'http://192.168.86.137:8082/repository/azure-devops-project/'
+    remotePath: 
