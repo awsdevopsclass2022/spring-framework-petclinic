@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: cURLUploader@2
   inputs:
-    files: '*.war'
+    files: '/home/vsts/work/1/s/target/petclinic.war'
     authType: 'UserAndPass'
     username: 'admin'
     password: 'admin123'
