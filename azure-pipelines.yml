@@ -27,5 +27,5 @@ steps:
     authType: 'UserAndPass'
     username: 'admin'
     password: 'admin123'
-    url: 'http://192.168.86.137:8082/repository/azure-devops-project/'
-    remotePath: 
+    url: 'http://192.168.86.137:8082/repository/deployment/petclinic.war'
+    
