@@ -24,7 +24,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      curl -v --user 'admin:admin123' --upload-file ./home/vsts/work/1/s/target/petclinic.war
+      curl -v --user 'admin:admin123' --upload-file /home/vsts/work/1/s/target/petclinic.war
       http://192.168.86.137:8082/repository/deployment/petclinic.war
 
-    
